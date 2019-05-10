@@ -17,7 +17,7 @@ var section = `
             <div class="media">
                 <div class="media__body medium">
                     <h1 class="contest__title">
-                        <a href="/d/masez/" data-emoji-enabled="">马二出题组</a>
+                        <a href="/d/zoj/" data-emoji-enabled="">ZOJ</a>
                     </h1>
                 </div>
             </div>
@@ -51,7 +51,11 @@ function tryInsert(data) {
     }
     document.getElementsByClassName('large-9 columns')[0].innerHTML = data + document.getElementsByClassName('large-9 columns')[0].innerHTML
 }
-if (window.location.href == 'https://oj.masnn.ml/')
-    window.InsertInterval = setInterval(tryInsert(section), 300);
-if (window.location.href == 'http://101.200.32.126/')
-    window.InsertInterval = setInterval(tryInsert(section1), 300);
+if (window.location.host == 'oj.masnn.ml') {
+    if (window.location.pathname == '/')
+        window.InsertInterval = setInterval(tryInsert(section), 300);
+}
+if (window.location.host == '101.200.32.126') {
+    if (window.location.href == '/')
+        window.InsertInterval = setInterval(tryInsert(section1), 300);
+}

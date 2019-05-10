@@ -4,7 +4,9 @@
   "description": "Socket.IO server for enhancing vijos",
   "main": "index.js",
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "express": "^4.16.4",
+    "log4js": "^4.1.1",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {},
