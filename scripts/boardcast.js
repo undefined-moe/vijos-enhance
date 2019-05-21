@@ -1,5 +1,7 @@
-socket.removeEventListener('alert');
-socket.on('alert', function(data) {
-    alert(data);
-});
-console.info('Module boardcast inited.');
+export default function () {
+    socket.removeEventListener('alert');
+    socket.on('alert', function (data) {
+        alert(data);
+    });
+    console.info('Module boardcast inited.');
+}

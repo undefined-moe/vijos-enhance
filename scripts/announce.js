@@ -1,7 +1,8 @@
 var section = `
 <div class="section page--contest_main visible" id="ma_flag_1">
 	<div class="section__header">
-		<h1 class="section__title">推荐</h1>
+        <h1 class="section__title">推荐</h1>
+        <p>现已支持Mozilla-Firefox！（在此纪念浪费在垃圾Firefox上的3.4小时</p>
 	</div>
     <ol class="section__list contest__list">
 	    <li class="section__list__item contest__item contest-type--oi">
@@ -46,13 +47,15 @@ var section1 = `
 `
 function tryInsert(data) {
     document.getElementsByClassName('large-9 columns')[0].innerHTML = data + document.getElementsByClassName('large-9 columns')[0].innerHTML
-    console.log('DOM injected.')
+    console.info('DOM injected.')
 }
-if (window.location.host == 'oj.masnn.ml') {
-    if (window.location.pathname == '/')
-        setTimeout(tryInsert(section), 300);
-}
-if (window.location.host == '101.200.32.126') {
-    if (window.location.href == '/')
-        setTimeout(tryInsert(section1), 300);
+export default function () {
+    if (window.location.host == 'oj.masnn.ml') {
+        if (window.location.pathname == '/')
+            setTimeout(tryInsert(section), 300);
+    }
+    if (window.location.host == '101.200.32.126') {
+        if (window.location.href == '/')
+            setTimeout(tryInsert(section1), 300);
+    }
 }
