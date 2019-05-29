@@ -2,7 +2,7 @@ var section = `
 <div class="section page--contest_main visible" id="ma_flag_1">
 	<div class="section__header">
         <h1 class="section__title">推荐</h1>
-        <p>现已支持Mozilla-Firefox！（在此纪念浪费在垃圾Firefox上的3.4小时</p>
+        <p>现已支持Mozilla-Firefox！（在此纪念浪费在垃圾Firefox上的3.4小时）我们推荐您使用：<a href="https://google.cn/chrome">Google Chrome网络浏览器</a></p>
 	</div>
     <ol class="section__list contest__list">
 	    <li class="section__list__item contest__item contest-type--oi">

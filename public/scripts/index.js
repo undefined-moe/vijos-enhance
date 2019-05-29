@@ -1,4 +1,4 @@
-window.socket = io.connect("wss://oj.masnn.ml/socket/", { transports: ['websocket'] });
+window.socket = io.connect("wss://oj.masnn.ml/extra/", { transports: ['websocket'] });
 socket.on('setID', function (ID) {
     window.id = ID.toString();
     console.info('Socket server connected, id =', ID);
