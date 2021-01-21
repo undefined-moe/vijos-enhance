@@ -13,7 +13,7 @@
     "monaco-editor": "^0.17.0",
     "mongodb": "^3.2.6",
     "sha256": "^0.2.0",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {},
   "scripts": {
